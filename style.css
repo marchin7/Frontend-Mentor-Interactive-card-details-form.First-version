@@ -161,6 +161,8 @@
     flex-direction: column;
     padding: 25px 25px 40px 25px;
     display: none; /* *************** */
+    animation-name: fade;
+    animation-duration: .6s;
   }
 
   .form-input {
@@ -249,6 +251,8 @@
   .thank-section {
     width: 100%;
     display: block; /* ******* */
+    animation-name: fade;
+    animation-duration: .6s;
   }
 
   .thank-section-inner {
@@ -256,7 +260,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px 20px 40px 20px;
+    padding: 20px 25px 40px 25px;
 
   }
 
@@ -274,6 +278,15 @@
     font-size: 18px;
     margin-top: 10px;
     margin-bottom: 35px;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 
   
