@@ -151,7 +151,7 @@
   .form-section {
     display: flex;
     justify-content: center;
-    margin-top: 90px;
+    margin-top: 60px;
   }
 
 
@@ -159,7 +159,8 @@
     width: 375px;
     display: flex;
     flex-direction: column;
-    padding: 0px 25px 40px 25px;
+    padding: 25px 25px 40px 25px;
+    display: none; /* *************** */
   }
 
   .form-input {
@@ -236,13 +237,43 @@
     margin-top: 12px;
   }
 
+  .continue-btn {
+    width: 100%;
+  }
+
   .confirm-btn:hover,
   .continue-btn:hover {
     opacity: 0.8;
   }
 
   .thank-section {
-    display: none;
+    width: 100%;
+    display: block; /* ******* */
+  }
+
+  .thank-section-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 40px 20px;
+
+  }
+
+  .thank-you-header {
+    text-transform: uppercase;
+    color: var(--clr-Very-dark-violet);
+    font-weight: normal;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-top: 32px;
+  }
+
+  .thank-you-paragraph {
+    color: var(--clr-Dark-grayish-violet);
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 35px;
   }
 
   
